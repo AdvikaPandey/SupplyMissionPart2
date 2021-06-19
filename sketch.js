@@ -31,12 +31,12 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.04, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.9, isStatic:true});
 	World.add(world, packageBody);
 
 	redRect1 = new RedZone(400,647,200,20);
-	redRect2 = new RedZone(320,647,20,100);
-	redRect3 = new RedZone(480,647,20,100);
+	redRect2 = new RedZone(300,600,20,100);
+	redRect3 = new RedZone(500,600,20,100);
 
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
